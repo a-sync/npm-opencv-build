@@ -1,7 +1,7 @@
 {
-  "name": "opencv-build",
+  "name": "@a-sync/opencv-build",
   "version": "0.0.10",
-  "description": "A simple script to auto build recent OpenCV + contrib version via npm",
+  "description": "A simple script to auto build recent OpenCV + contrib version via npm. (This fork defaults to disabled auto build, and checks for OPENCV4NODEJS_ENABLE_AUTOBUILD)",
   "main": "index.js",
   "scripts": {
     "install": "node ./install.js",

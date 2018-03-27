@@ -70,5 +70,5 @@ exports.isUnix = function() {
 }
 
 exports.isAutoBuildDisabled = function() {
-  return !!process.env.OPENCV4NODEJS_DISABLE_AUTOBUILD
+  return !process.env.OPENCV4NODEJS_ENABLE_AUTOBUILD
 }

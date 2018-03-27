@@ -27,11 +27,11 @@ const setupOpencv = require('./install/setup-opencv')
 function install() {
   log.silly('install', 'install')
   if (isAutoBuildDisabled()) {
-    log.info('install', 'OPENCV4NODEJS_DISABLE_AUTOBUILD is set')
+    log.info('install', 'OPENCV4NODEJS_ENABLE_AUTOBUILD is not set')
     log.info('install', 'skipping auto build...')
     return
   }
-  log.info('install', 'if you want to use an own OpenCV installation set OPENCV4NODEJS_DISABLE_AUTOBUILD')
+  log.info('install', 'if you want to use an own OpenCV installation remove OPENCV4NODEJS_ENABLE_AUTOBUILD')
   log.info('install', 'running install script...')
 
   // prevent rebuild on every install
